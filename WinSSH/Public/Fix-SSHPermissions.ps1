@@ -57,7 +57,7 @@ function Fix-SSHPermissions {
     }
 
     if (!$(Test-Path "$env:ProgramFiles\OpenSSH-Win64\FixHostFilePermissions.ps1")) {
-        $LatestPSScriptsUriBase = "https://raw.githubusercontent.com/PowerShell/Win32-OpenSSH/L1-Prod/contrib/win32/openssh"
+        $LatestPSScriptsUriBase = "https://raw.githubusercontent.com/PowerShell/openssh-portable/latestw_all/contrib/win32/openssh/"
         $ScriptsToDownload = @(
             "FixHostFilePermissions.ps1"
             "FixUserFilePermissions.ps1"
